@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Onliner Test Plan" verbose="1">
+
+	<test name="Functional Tests" preserve-order="true">
+		<parameter name="nameProduct" value="Samsung" />
+		<parameter name = "maxPrice" value = "1000"/>
+		<parameter name = "minYear" value = "2013"/>
+		<parameter name = "minDiagonal" value = "39"/>
+		<parameter name = "maxDiagonal" value = "42"/>
+		<classes>
+ 			<class name="org.kostykevich.tests.TestOnlinerFindTV" />
+        </classes>
+	</test>
+</suite>

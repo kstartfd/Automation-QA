@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test" parallel="false">
+
+    <test name="TestTutBy">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="http://www.tut.by/"/>
+
+        <parameter name="request" value="automated testing"/>
+        <parameter name="search" value="Minsk Automated Testing Community"/>
+        <!--Minsk Automated Testing Community-->
+        <classes>
+            <class name="tests.task1.TestTutBy"/>
+        </classes>
+    </test>
+
+    <test name="Gmail">
+        <parameter name="url" value="https://www.google.com/intl/ru/mail/help/about.html"/>
+        <parameter name="name" value="tasktest970@gmail.com"/>
+        <parameter name="password" value="725854open"/>
+        <parameter name="search" value="([(W|w)]ebdriver)"/>
+        <parameter name="actual" value="3"/>
+        <parameter name="whom" value="skortabeast@gmail.com"/>
+        <parameter name="subject" value="selenium"/>
+        <parameter name="mail" value="privet"/>
+        <classes>
+            <class name="tests.task2.TestGmail"/>
+        </classes>
+    </test>
+
+
+    <test name="Delta">
+        <parameter name="url" value="https://www.delta.com/"/>
+
+        <parameter name="from" value="JFK"/>
+        <parameter name="to" value="SVO"/>
+
+        <parameter name="departDate" value="11032016"/>
+        <parameter name="returnDate" value="11042016"/>
+
+        <parameter name="firstName" value="Artsiom"/>
+        <parameter name="middleName" value="Fedaravich"/>
+        <parameter name="lastName" value="Kastsiukevich"/>
+
+        <parameter name="emergencyFirstName" value="Alena"/>
+        <parameter name="emergencyLastName" value="Kastsiukevich"/>
+        <parameter name="emergencyPhoneNumber" value="375293461137"/>
+
+        <parameter name="phoneNumber" value="375445592892"/>
+        <parameter name="email" value="kstartfd@gmail.com"/>
+
+        <classes>
+            <class name="tests.task3.TestDelta"/>
+        </classes>
+    </test>
+
+    <test name="FTP">
+        <parameter name="user" value="anonymous"/>
+        <parameter name="pass" value="anonymous"/>
+        <parameter name="server" value="ftp.bynets.org"/>
+        <classes>
+            <class name="tests.task4.TestFTP"/>
+        </classes>
+    </test>
+
+</suite>
+
+

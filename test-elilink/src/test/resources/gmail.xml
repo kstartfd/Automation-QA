@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Gmail" parallel="false">
+    <parameter name="url" value="https://www.google.com/intl/ru/mail/help/about.html"/>
+    <test name="Gmail">
+        <parameter name="name" value="tasktest970@gmail.com"/>
+        <parameter name="password" value="725854open"/>
+        <parameter name="search" value="([(W|w)]ebdriver)"/>
+        <parameter name="actual" value="3"/>
+        <parameter name="whom" value="skortabeast@gmail.com"/>
+        <parameter name="subject" value="selenium"/>
+        <parameter name="mail" value="privet"/>
+        <classes>
+            <class name="tests.task2.TestGmail"/>
+        </classes>
+    </test>
+</suite>

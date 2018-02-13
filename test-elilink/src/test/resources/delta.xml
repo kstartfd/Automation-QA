@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Delta" parallel="false">
+    <test name="Delta">
+        <parameter name="url" value="https://www.delta.com/"/>
+
+        <parameter name="from" value="JFK"/>
+        <parameter name="to" value="SVO"/>
+
+        <parameter name="departDate" value="11032016"/>
+        <parameter name="returnDate" value="11042016"/>
+
+        <parameter name="firstName" value="Artsiom"/>
+        <parameter name="middleName" value="Fedaravich"/>
+        <parameter name="lastName" value="Kastsiukevich"/>
+
+        <parameter name="emergencyFirstName" value="Alena"/>
+        <parameter name="emergencyLastName" value="Kastsiukevich"/>
+        <parameter name="emergencyPhoneNumber" value="375293461137"/>
+
+        <parameter name="phoneNumber" value="375445592892"/>
+        <parameter name="email" value="kstartfd@gmail.com"/>
+
+        <classes>
+            <class name="tests.task3.TestDelta"/>
+        </classes>
+    </test>
+</suite>

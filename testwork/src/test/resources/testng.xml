@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Epam test" verbose="1">
+    <test name="Test from account 1 to account 2" preserve-order="true">
+        <parameter name="userFrom" value="theskortabeast@tut.by"/>
+        <parameter name="password" value="5592892open"/>
+        <parameter name="userTo" value="skortabeast@tut.by"/>
+        <parameter name="userToUnknownYahooCom" value="skortabeast@yahoo.com"/>
+        <parameter name="unknownUser" value="dasda@gmail.com"/>
+        <parameter name="message" value="Hello"/>
+        <parameter name="topic" value="Testing Topic"/>
+        <classes>
+            <class name="TestSendEmailMessages"/>
+        </classes>
+    </test>
+
+    <test name="Test from account 1 to account 2" preserve-order="true">
+        <parameter name="userFrom" value="theskortabeast@tut.by"/>
+        <parameter name="password" value="5592892open"/>
+        <parameter name="wrongEmail" value="dasdagmail.com"/>
+        <parameter name="message" value="Hello"/>
+        <parameter name="topic" value="Testing Topic"/>
+        <classes>
+            <class name="TestNegativeEmail"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TutBy" parallel="false">
+    <parameter name="browser" value="firefox"/>
+
+    <parameter name="url" value="http://www.tut.by/"/>
+
+    <test name="TestTutBy">
+    <parameter name="request" value="automated testing"/>
+    <parameter name="search" value="Minsk Automated Testing Community"/>
+        <!--Minsk Automated Testing Community-->
+    <classes>
+        <class name="tests.task1.TestTutBy"/>
+    </classes>
+    </test>
+
+</suite>
+

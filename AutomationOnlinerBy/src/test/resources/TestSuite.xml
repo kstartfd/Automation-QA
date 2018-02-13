@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Onliner Test Plan" verbose="1">
+
+	<test name="Test Video" preserve-order="true">
+		<parameter name = "login" value = "kstartfd"/>
+		<parameter name = "password" value = "666open"/>
+		<parameter name = "name" value = "msi"/>
+		<parameter name = "release" value = "2016"/>
+		<classes>
+			<class name="kostykevich.tests.onliner.catalog.TestOnlinerVideo" />
+		</classes>
+	</test>
+
+	<test name="Test Baraholka" preserve-order="true">
+		<parameter name = "login" value = "kstartfd"/>
+		<parameter name = "password" value = "666open"/>
+		<parameter name = "section" value = "Мобильные телефоны"/>
+		<parameter name = "header" value = "Куплю телефон"/>
+		<parameter name = "description" value = "Любой"/>
+		<parameter name = "price" value = "1000"/>
+		<classes>
+			<class name="kostykevich.tests.onliner.baraholka.TestOnlinerBaraholka" />
+		</classes>
+	</test>
+
+
+
+
+
+</suite>

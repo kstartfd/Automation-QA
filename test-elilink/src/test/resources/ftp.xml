@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FTP" parallel="false">
+    <test name="FTP">
+        <parameter name="user" value="anonymous"/>
+        <parameter name="pass" value="anonymous"/>
+        <parameter name="server" value="ftp.bynets.org"/>
+        <classes>
+            <class name="tests.task4.TestFTP"/>
+        </classes>
+    </test>
+
+</suite>
